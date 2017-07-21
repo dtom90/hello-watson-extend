@@ -2,10 +2,10 @@
   "name": "extend-watson",
   "version": "1.0.0",
   "description": "Extension of the Hello-Watson chatbot",
-  "main": "server.js",
+  "main": "start.js",
   "scripts": {
     "postinstall": "cd hello-watson && npm install",
-    "start": "cd hello-watson && npm start",
+    "start": "node start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/dtom90/hello-watson-extended/issues"
   },
-  "homepage": "https://github.com/dtom90/hello-watson-extended#readme"
+  "homepage": "https://github.com/dtom90/hello-watson-extended#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "gulp": "^3.9.1"
+  }
 }
